@@ -1,0 +1,289 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para sacar subrayado */
+* {
+  outline: none;
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  padding: 1rem 3rem;
+  background-color: rgb(36, 48, 52);
+}
+
+.g-template-column {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
+
+.image-perfil {
+  padding: 2rem;
+  padding-bottom: 0rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Lora", sans-serif;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  font-size: 1rem;
+  color: black;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+.text {
+  color: black;
+  padding-left: 1.5rem;
+  padding-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-mail {
+  text-transform: none;
+  color: blue;
+}
+
+.text-size {
+  font-size: 1rem;
+}
+
+.profession {
+  font-family: lora, serif;
+  font-size: 1.3rem;
+  color: #253439;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.margin-left-right {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 0;
+}
+
+.border-botton {
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid black;
+}
+
+main {
+  background-color: white;
+  border: 0.0625rem solid black;
+  height: auto;
+  padding-bottom: 2%;
+  box-shadow: inset 0 0 16px #444444;
+}
+
+.section-desplegable {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.section-desplegable:hover {
+  color: darkblue;
+}
+
+.titulo-1:hover {
+  color: darkblue;
+}
+
+.section__main--informacion {
+  margin-left: 0.5rem;
+}
+
+.section__main--subtitulos {
+  padding-bottom: 0.065rem;
+  padding-top: 1rem;
+}
+
+.ocultar {
+  display: none;
+}
+
+.titulo-1 {
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #253439;
+  padding-left: 0.5rem;
+}
+
+.subtitulos {
+  text-transform: uppercase;
+  color: black;
+  font-family: "Alike";
+}
+
+.space {
+  padding-bottom: 0.6rem;
+}
+
+.section__main--informacion ul li p {
+  color: #253439;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+.section__main--informacion div p {
+  color: #253439;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+/*footer*/
+.logo-size {
+  padding-top: 0.3rem;
+  font-size: 2rem;
+}
+
+.color-link {
+  color: blue;
+  font-size: 1rem;
+}
+
+/* Media queris */
+
+@media only screen and (min-width: 712px) {
+  .g-template-column {
+    grid-template-columns: auto auto;
+  }
+
+  body {
+    padding: 10% 15%;
+  }
+  h1 {
+    padding-top: 5rem;
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+  .image-perfil {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  article div h2 {
+    font-size: 1.6rem;
+  }
+  .text h2 {
+    font-size: 1.2rem;
+  }
+
+  .titulo-1 {
+    font-size: 1.5rem;
+  }
+  .section__main--informacion ul li h2 {
+    font-size: 1.1rem;
+  }
+
+  .section__main--informacion div h2 {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .g-template-column {
+    grid-template-columns: auto auto;
+  }
+
+  body {
+    padding: 10% 18%;
+  }
+  h1 {
+    padding-top: 5rem;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  .image-perfil {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  article div h2 {
+    font-size: 1.8rem;
+  }
+
+  .text h2 {
+    font-size: 1.8rem;
+  }
+
+  .titulo-1 {
+    font-size: 2.1rem;
+  }
+  .section__main--informacion p {
+    font-size: 1.5rem;
+  }
+
+  .section__main--informacion ul li h2 {
+    font-size: 1.5rem;
+  }
+
+  .section__main--informacion div h2 {
+    font-size: 1.5rem;
+  }
+
+  .section__main--informacion ul li p {
+    font-size: 1.4rem;
+  }
+  .section__main--informacion div p {
+    font-size: 1.4rem;
+  }
+
+  .text-mail {
+    font-size: 1.8rem;
+  }
+}
